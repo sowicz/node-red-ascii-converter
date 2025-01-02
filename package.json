@@ -1,0 +1,17 @@
+{
+  "name": "@ksowa/node-red-ascii-converter",
+  "version": "1.0.0",
+  "main": "ascii-converter.js",
+  "node-red" : {
+    "nodes": {
+        "ascii-converter": "ascii-converter.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Kamil_Sowa",
+  "license": "ISC",
+  "description": "Array of hexadecimal/decimal numbers to ASCII symbols converter"
+}

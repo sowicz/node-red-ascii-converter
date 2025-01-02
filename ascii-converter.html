@@ -1,0 +1,61 @@
+<script type="text/javascript">
+  RED.nodes.registerType('ascii-converter',{
+      category: 'parser',
+      color: '#C7E9C0',
+      defaults: {
+          name: {value:""},
+          entryQuantity: {value:null},
+          lastQuantity: {value:null},
+          inputType: {value:"DEC"}
+      },
+      inputs: 1,
+      outputs: 1,
+      icon: "fa fa-exchange",
+      label: function() {
+          return this.name||"ascii-converter";
+      }
+  });
+</script>
+
+<script type="text/html" data-template-name="ascii-converter">
+  <div id="description" class="description">
+    <h3>ASCII converter</h3>
+    <p>This node convert array of decimal/hexadecimal numbers to <br>
+      ASCII characters and output is as string.
+    </p>
+  </div>
+
+  <br>
+  <div class="form-row">
+    <label for="node-input-inputType"><i class="fa fa-cog"></i> Input Type</label>
+    <select id="node-input-inputType">
+      <option value="HEX">Array of hexadecimal numbers</option>
+      <option value="DEC">Array of decimal numbers</option>
+    </select>
+  </div>
+
+  <div class="form-row">
+    <label for="node-input-entryQuantity"><i class="fa fa-forward"></i> Entry skip</label>
+    <input type="number" id="node-input-entryQuantity" min="0" max="9999" placeholder="Number of entry positions to skip">
+  </div>
+  <div class="form-row">
+    <label for="node-input-lastQuantity"><i class="fa fa-backward"></i>  Last skip</label>
+    <input type="number" id="node-input-lastQuantity" min="0" max="9999" placeholder="Number of last positions to skip">
+  </div>
+  <br>
+  <div>
+    <p>First skip option is to skip positions in array from beggining of the array.</p>
+    <p>Last skip option is to skip positions in array from end of the array.</p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="form-row">
+      <label for="node-input-name"><i class="fa fa-tag"></i>Name</label>
+      <input type="text" id="node-input-name" placeholder="Name">
+  </div>
+</script>
+
+<script type="text/html" data-help-name="ascii-converter">
+  <p>A node to convert array of hex/dec to ASCII characters</p>
+</script>
