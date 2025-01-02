@@ -1,11 +1,11 @@
 {
   "name": "@ksowa/node-red-array-ascii-converter",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "ascii-converter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [ "node-red" ],
+  "keywords": [ "node-red, ascii, converter, decimal, to, hexadecimal, ksowa, ascii-converter, symbols, array, of" ],
   "node-red" : {
     "nodes": {
         "ascii-converter": "ascii-converter.js"
