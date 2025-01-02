@@ -1,6 +1,6 @@
 {
-  "name": "@ksowa/node-red-ascii-converter",
-  "version": "1.0.0",
+  "name": "@ksowa/node-red-array-ascii-converter",
+  "version": "1.0.1",
   "main": "ascii-converter.js",
   "node-red" : {
     "nodes": {
